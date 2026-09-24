@@ -1,0 +1,374 @@
+@media (min-width: 480px) {
+    .contacts__btn {
+        height: 60px;
+    }
+}
+
+@media (min-width: 640px) {
+    .portfolio__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .portfolio__column--last {
+        grid-column: 1 / span 2;
+        justify-items: center;
+    }
+
+    .project-card--last {
+        width: 50%;
+    }
+
+    .portfolio .portfolio__column {
+        margin: 0;
+    }
+
+    .project-card {
+        height: 440px;
+    }
+
+    .project-card__info {
+        padding: 20px;
+    }
+
+    .pricing-card__title {
+        font-size: 35px;
+    }
+
+    .pricing-card__price {
+        font-size: 36px;
+    }
+
+    .pricing-card__description,
+    .pricing-card__item {
+        font-size: 23px;
+    }
+
+    .pricing-card__btn {
+        padding: 20px 0;
+    }
+
+    .pricing__note {
+        font-size: 25px;
+    }
+
+    .process__steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .review__name,
+    .review__role {
+        font-size: 28px;
+    }
+
+    .review__text {
+        font-size: 23px;
+    }
+
+    .review__avatar {
+        height: 75px;
+    }
+
+    .review__quotte-icon {
+        height: 40px;
+    }
+
+    .review {
+        padding: 25px;
+    }
+
+    .contacts__btn {
+        width: 30%;
+        margin: 0 20px;
+    }
+
+    .contacts__actions {
+        justify-content: center;
+    }
+
+    .contacts__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .contacts .contacts__item {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .title-primary {
+        font-size: 50px;
+    }
+
+    .hero__actions {
+        justify-content: start;
+    }
+
+    .hero__btn--primary {
+        margin-right: 60px;
+    }
+
+    .hero__btn {
+        width: 300px;
+        height: 75px;
+        font-size: 25px;
+    }
+
+    .hero__title {
+        font-size: 44px;
+        max-width: 628px;
+    }
+
+    .hero__description {
+        font-size: 27px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .benefits__title {
+        font-size: 40px;
+    }
+
+    .benefits__item-title {
+        font-size: 35px;
+    }
+
+    .benefits__item-description {
+        font-size: 20px;
+    }
+
+    .benefits__item {
+        margin-top: 40px;
+        padding: 30px 20px;
+    }
+
+    .about__text {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .about__img {
+        max-width: none;
+    }
+
+    .about__content {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .about__title,
+    .about__label {
+        text-align: left;
+    }
+
+    .about__title {
+        margin: 30px 0 35px;
+    }
+
+    .portfolio__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio__column--last {
+        grid-column: auto;
+    }
+
+    .project-card--last {
+        width: auto;
+    }
+
+    .pricing__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .pricing-card--accent {
+        margin: 0;
+    }
+
+    .pricing-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing-card__btn--first {
+        margin-top: auto;
+    }
+
+    .contacts__subtitle {
+        font-size: 25px;
+        max-width: 931px;
+        margin: 0 auto;
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .footer__link {
+        color: var(--text-primary);
+        font-weight: 600;
+        transition: 0.3s color;
+        font-size: 20px;
+    }
+
+    .footer__link:hover {
+        color: var(--accent);
+    }
+
+    .footer__container {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-primary {
+        padding: 60px 0 70px;
+    }
+
+    .title-primary {
+        font-size: 50px;
+    }
+
+    .header {
+        padding: 22px 0;
+    }
+
+    .header__container {
+        padding: 0 15px;
+    }
+
+    .header__logo-link {
+        margin: 0;
+    }
+
+    .header__nav {
+        height: auto !important;
+        margin: 0;
+        flex-direction: row;
+        width: 680px;
+        justify-content: space-between;
+    }
+
+    .header__link {
+        padding: 0;
+        border: none !important;
+    }
+
+    .header__bars-btn {display: none;}
+    .header__chat-btn {display: block;}
+
+    .header__chat-btn:hover {
+        background: var(--text-primary);
+        color: var(--bg-primary);
+    }
+
+    .hero__btn {
+        width: 328px;
+        height: 86px;
+        font-size: 26px;
+    }
+
+    .hero__title {
+        font-size: 55px;
+        max-width: 100%;
+    }
+
+    .hero__description {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .benefits__title {
+        font-size: 55px;
+    }
+
+    .benefits__item {
+        margin-top: 70px;
+        padding: 35px 50px;
+    }
+
+    .benefits__item-title {
+        font-size: 50px;
+    }
+
+    .benefits__item-description {
+        font-size: 25px;
+    }
+    
+    .about__content {
+        align-items: start;
+    }
+
+    .about__text {
+        font-size: 26px;
+    }
+
+    .project-card {
+        height: 460px;
+    }
+
+    .pricing__grid {
+        gap: 50px;
+    }
+
+    .pricing-card {
+        padding: 40px;
+    }
+
+    .pricing__grid {
+        margin-top: 70px;
+    }
+
+    .pricing__note {
+        max-width: 930px;
+        margin: 60px auto 0;
+    }
+
+    :root {
+            --slide-preview: 2;
+    }
+
+    .item {
+        width: 50%;
+    }
+
+    .review {
+        margin: 0 10px;
+        height: 296px;
+    }
+
+    .contacts__list {
+        width: 70%;
+    }
+
+    .footer__nav {
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .process__steps {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1536px) { /* большие экраны */ }
