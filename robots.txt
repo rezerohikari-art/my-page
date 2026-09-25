@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://my-page-psi-red.vercel.app/sitemap.xml

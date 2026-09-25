@@ -1,21 +1,39 @@
-const barsBtn = document.querySelector(".header__bars-btn");
-barsBtn.addEventListener("click", closeOpenNavigation);
+const navigation = {
+    barsBtn: document.querySelector(".header__bars-btn"),
+    navBtns: document.querySelectorAll(".header__link"),
+    icon: document.querySelector(".header__bars-img"),
+    navigation: document.querySelector(".header__nav"),
 
-function closeOpenNavigation() {
-    const headerNavigation = document.querySelector(".header__nav");
-    const barsImg = document.querySelector(".header__bars-img")
-    let height = headerNavigation.scrollHeight + "px";
+    init() {
+        this.barsBtn.addEventListener("click", () => this.toggle());
+        this.navBtns.forEach((element) => element.addEventListener("click", () => this.close()));
+    },
 
-    if (this.classList.contains("active")) {
-        this.classList.remove("active");
-        headerNavigation.style.height = 0;
-        barsImg.src = "images/bars.png";
-    } else {
-        this.classList.add("active");
-        headerNavigation.style.height = height;
-        barsImg.src = "images/bars-exit.png";
+    toggle() {
+        if (this.barsBtn.classList.contains("active")) {
+            this.close();
+            console.log(12)
+        } else {
+            this.open();
+            console.log(1)
+        }
+    },
+
+    open() {
+        const height = this.navigation.scrollHeight + "px";
+        this.navigation.style.height = height;
+        this.barsBtn.classList.add("active");
+        this.icon.src = "images/bars-exit.png";
+    },
+
+    close() {
+        this.navigation.style.height = 0;
+        this.barsBtn.classList.remove("active");
+        this.icon.src = "images/bars.png";
     }
 }
+
+navigation.init();
 
 
 class Slider {
@@ -93,4 +111,3 @@ class Slider {
 }
 
 const reviewSlider = new Slider(".reviews__slider");
-console.log(reviewSlider)
